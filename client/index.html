@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/main.js"></script>
+    <title>Main</title>
+</head>
+<style>
+    .container{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 900px;
+        padding: 15px;
+    }
+
+    .board-button-area{
+        width: 100%;
+        text-align: right;
+        margin-bottom: 20px;
+    }
+
+    .board-list-area{
+        width: 100%;
+        border: 1px solid #ddd;
+        text-align: center;
+
+    }
+    
+    .board-list{
+        width: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    .board-list th, .board-list td{
+        padding: 15px 20px;
+        border-bottom:1px solid black 
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="board-button-area">
+            <a href="./post-editor/index.html"><button>포스트 작성</button></a>
+        </div>
+        <div class="board-list-area">
+            <table class="board-list">
+                <thead class="board-list-head">
+                    <th>Post Id</th>
+                    <th>Content</th>
+                    <th>Create Date</th>
+                    <th>Post Management</th>
+                </thead>
+                <tbody class="board-list-body">
+                    
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
